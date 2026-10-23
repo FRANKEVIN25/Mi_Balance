@@ -27,5 +27,6 @@ export default {async fetch(request,env){
   }
   const file=assets[url.pathname==='/'?'/index.html':url.pathname];
   if(!file)return new Response('Página no encontrada',{status:404});
-  return new Response(file.body,{headers:{'Content-Type':file.type,'Cache-Control':'no-cache','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'self'"}});
+  const body=file.encoding==='base64'?Uint8Array.from(atob(file.body),c=>c.charCodeAt(0)):file.body;
+  return new Response(body,{headers:{'Content-Type':file.type,'Cache-Control':file.encoding==='base64'?'private, max-age=86400':'no-cache','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'self'"}});
 }};

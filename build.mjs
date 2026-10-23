@@ -1,6 +1,7 @@
 import {mkdirSync,readFileSync,writeFileSync} from 'node:fs';
 mkdirSync('dist/server',{recursive:true});mkdirSync('dist/.openai',{recursive:true});
-const assets={};for(const [file,type] of [['index.html','text/html; charset=utf-8'],['style.css','text/css; charset=utf-8'],['app.mjs','text/javascript; charset=utf-8'],['favicon.svg','image/svg+xml']])assets['/'+file]={body:readFileSync('web/'+file,'utf8'),type};
+const assets={};for(const [file,type] of [['index.html','text/html; charset=utf-8'],['theme.js','text/javascript; charset=utf-8'],['style.css','text/css; charset=utf-8'],['theme.css','text/css; charset=utf-8'],['atmosphere.css','text/css; charset=utf-8'],['app.mjs','text/javascript; charset=utf-8'],['favicon.svg','image/svg+xml']])assets['/'+file]={body:readFileSync('web/'+file,'utf8'),type};
+assets['/assets/night-lake.png']={body:readFileSync('web/assets/night-lake.png').toString('base64'),type:'image/png',encoding:'base64'};
 assets['/finance.mjs']={body:readFileSync('src/finance.mjs','utf8'),type:'text/javascript; charset=utf-8'};
 const finance=readFileSync('src/finance.mjs','utf8').replace(/^export /gm,'');
 const worker=readFileSync('src/worker.mjs','utf8').replace(/^import .*;\r?\n/gm,'');

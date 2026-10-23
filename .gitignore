@@ -30,6 +30,17 @@ yarn-error.log*
 .env*
 .dev.vars*
 *.pem
+*.key
+
+# Local financial databases and exported personal backups
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3-shm
+*.sqlite3-wal
+/mi-balance-*.json
+/movimientos-*.csv
 
 # Checkout-local tool state
 /.wrangler/
@@ -43,3 +54,4 @@ yarn-error.log*
 
 # OS metadata
 .DS_Store
+Thumbs.db

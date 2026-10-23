@@ -1,0 +1,241 @@
+/* User-selected direction: a quiet landscape, soft glass and botanical greens. */
+.landscape-heading{position:relative;isolation:isolate;min-height:158px;padding:26px 28px;border:1px solid #cbdad6;border-radius:16px;overflow:hidden;background:#edf4ef;gap:24px}
+.landscape-heading>div{position:relative;z-index:1}
+.landscape-heading::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#edf4effa 0%,#edf4efe8 37%,#edf4ef24 75%),url('/assets/night-lake.png') center 44%/cover no-repeat;opacity:.88}
+.page-heading.landscape-heading h1{font-size:39px;letter-spacing:-1px;line-height:1.15;color:#314a43}
+.landscape-heading h1 span{color:#177d67}
+.landscape-heading .greeting{font-size:11px;letter-spacing:.6px;margin-bottom:9px}
+.landscape-heading .heading-controls{align-self:flex-end;flex-direction:row;align-items:center;gap:12px}
+.landscape-heading .heading-controls>.btn{min-height:44px;padding:11px 20px}
+.landscape-heading .month-picker{min-height:44px}
+.budget-section{border:1px solid #dce6e8;background:#ffffffb0;border-radius:16px;padding:17px;margin-bottom:20px}
+.budget-section .section-heading{margin:0 5px 15px;gap:12px}
+.budget-section .section-heading>div{flex:1}
+.budget-section .section-heading h2{font-size:16px}
+.budget-section .section-heading p{margin-top:2px;font-size:11px}
+.section-symbol{color:#248567;display:grid;place-items:center;flex-shrink:0}
+.section-symbol svg{width:29px;height:29px}
+.budget-section .envelopes{margin-bottom:0}
+.budget-key{font-size:10px;text-align:right;margin:12px 4px 0;color:#63767f}
+.envelopes .envelope{padding:17px 19px;border-top-width:1px;display:block}
+.envelopes .envelope-top{display:flex;align-items:flex-start;justify-content:flex-start;flex-direction:row;gap:12px;margin-bottom:15px;position:relative}
+.envelopes .envelope-top>.iconbox{display:grid;flex-shrink:0;width:38px;height:38px;border-radius:11px;margin-top:2px}
+.envelope-title{flex:1;min-width:0;padding-top:1px}
+.envelope-title .percent{font-size:25px;line-height:1.1;display:block}
+.envelope-title h3{font-size:12px;margin-top:4px}
+.envelope-title p{font-size:10px;line-height:1.5;margin-top:6px}
+.allocation-ring{position:relative;flex-shrink:0;display:grid;place-items:center;width:65px;height:65px;margin-left:auto;color:var(--accent)}
+.allocation-ring svg{width:65px;height:65px;transform:rotate(-90deg)}
+.allocation-ring circle{fill:none;stroke-width:7}
+.ring-track{stroke:#e0e8e9}
+.ring-value{stroke:currentColor;stroke-linecap:round}
+.allocation-ring>span{position:absolute;font-size:14px;font-weight:600;color:#405d61;line-height:1}
+.allocation-ring small{display:inline;font-size:11px;color:inherit}
+.envelope .progress{height:7px;margin:12px 0 10px}
+.budget-ledger{display:flex;align-items:baseline;gap:8px;justify-content:space-between;flex-wrap:wrap}
+.budget-ledger .budget-amount{margin:0;font-size:15px;line-height:1.5}
+.budget-ledger .budget-amount>span{font-size:10px}
+.budget-ledger .budget-bottom{font-size:10px;margin-left:auto;max-width:100%}
+.metric{position:relative;overflow:hidden;isolation:isolate}
+.metric-link{position:absolute;right:16px;top:18px;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid #d1e0e4;background:#ffffff70;color:#68808b;z-index:2}
+.metric-link svg{width:15px;height:15px}
+.metric-link:hover{background:#e1f1e9;color:#256d57}
+.metric-icon{width:39px;height:39px;border:1px solid #d7e7e1;border-radius:11px}
+.panel-heading h2{display:flex;align-items:center;gap:10px}
+.panel-heading h2 svg{width:29px;height:29px;padding:5px;background:#eef4f5;border-radius:7px;color:#758e99}
+.quiet-empty>.btn{margin-top:18px}
+.home-view .content-columns .empty,.home-view .quiet-empty{padding:24px 22px 28px}
+.home-view .content-columns .empty h3{font-size:14px}
+.home-view .content-columns .empty p,.home-view .quiet-empty p{font-size:11px}
+
+html[data-theme="dark"]{--night-bg:#101c23;--night-surface:#1c2b35;--night-line:#354c59;--night-text:#e1e9ee;--night-muted:#afbdcb;--night-green:#a1debd}
+html[data-theme="dark"] body{background:radial-gradient(ellipse at 90% 0%,#24344066,transparent 42%),var(--night-bg)}
+html[data-theme="dark"] .sidebar{inset:16px auto 16px 16px;width:232px;border:1px solid #3a505955;border-top-color:#799c9973;border-radius:16px;background:linear-gradient(125deg,#24383bc9,#1b2933f0 55%);box-shadow:0 16px 40px #07101726;padding:25px 16px 20px;backdrop-filter:blur(18px)}
+html[data-theme="dark"] main{margin-left:264px;width:calc(100% - 264px)}
+html[data-theme="dark"] .topbar{height:64px;background:transparent;padding:0 24px;border-color:#35434d75}
+html[data-theme="dark"] .main-content{padding:16px 22px 24px;max-width:1640px}
+html[data-theme="dark"] .brand{font-size:25px;padding:0 6px;letter-spacing:-1.2px}
+html[data-theme="dark"] .brand-mark{width:27px;height:27px;margin-right:10px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#c4e5ac,#62b79c 40%,#28656c);box-shadow:0 0 14px #8bc8a51c}
+html[data-theme="dark"] .brand-mark svg{width:18px;height:18px;color:#204b49}
+html[data-theme="dark"] .workspace{margin:42px 6px 16px;padding-bottom:23px}
+html[data-theme="dark"] .workspace .avatar{width:39px;height:39px;border-radius:50%;background:linear-gradient(145deg,#354d60,#263b48);font-size:16px}
+html[data-theme="dark"] .nav-item{padding:12px 14px;margin:7px 0;font-size:12px;border:1px solid transparent}
+html[data-theme="dark"] .nav-item.active{background:linear-gradient(105deg,#4b8f6f90,#2a4c49d9 80%);border-color:#689c7d4d;box-shadow:inset 1px 0 #a4dc9e99;color:#eef5f0}
+html[data-theme="dark"] .nav-item.active svg{color:#a2e7bb;filter:drop-shadow(0 0 5px #78cfa34d)}
+html[data-theme="dark"] .nav-count{border-radius:50%;padding:1px 6px;background:#365d54;color:#e0f6e8}
+html[data-theme="dark"] .sidebar-tip{position:relative;isolation:isolate;overflow:hidden;min-height:146px;background:linear-gradient(115deg,#61594bed,#3b3436d4),url('/assets/night-lake.png') 100% 90%/auto 270px;border:1px solid #a18f7355;margin:14px 0 23px;padding:18px 16px;border-radius:13px}
+html[data-theme="dark"] .sidebar-tip::after{content:"";position:absolute;inset:0;background:url('/assets/night-lake.png') 100% 100%/auto 240px;opacity:.22;z-index:-1;pointer-events:none;mask-image:linear-gradient(90deg,transparent,#000)}
+html[data-theme="dark"] .sidebar-tip svg{width:27px;height:27px;color:#e5d5a2}
+html[data-theme="dark"] .sidebar-tip strong{font-size:12px;color:#f0ddba}
+html[data-theme="dark"] .sidebar-tip p{font-size:11px;color:#d1d0cb;max-width:155px}
+html[data-theme="dark"] .private-note{justify-content:flex-start;padding-left:16px;font-size:11px;color:#b6c4ce}
+html[data-theme="dark"] .private-note svg{margin-right:5px}
+html[data-theme="dark"] .landscape-heading{background:#14232c;border-color:#364b5d;min-height:158px;margin-bottom:18px;box-shadow:inset 0 1px #a0b4b609}
+html[data-theme="dark"] .landscape-heading::before{opacity:1;background:linear-gradient(90deg,#101e26f5 0%,#101e26d9 26%,#101e261a 69%,#101e2640),linear-gradient(0deg,#101e26ad,transparent 70%),url('/assets/night-lake.png') center 17%/cover no-repeat}
+html[data-theme="dark"] .page-heading.landscape-heading h1{font-size:40px;font-weight:600;color:#f0dbb9;text-shadow:0 2px 12px #101c23aa}
+html[data-theme="dark"] .landscape-heading h1 span{color:#a1e6c2}
+html[data-theme="dark"] .landscape-heading .greeting{color:#bac8d6}
+html[data-theme="dark"] .landscape-heading p:not(.greeting){color:#c4cfd9;font-size:13px;margin-top:9px;text-shadow:0 1px 8px #101c23}
+html[data-theme="dark"] .landscape-heading .month-picker{background:#202c3cdd;border-color:#58637b;box-shadow:0 3px 12px #12192333;backdrop-filter:blur(10px)}
+html[data-theme="dark"] .month-picker input{font-size:12px}
+html[data-theme="dark"] .btn.primary{background:linear-gradient(110deg,#426f5c,#27675e);border-color:#65a58a;box-shadow:inset 0 1px #b4ddad4d,0 0 14px #6cb99414;color:#f2f7f5}
+html[data-theme="dark"] .btn.primary:hover{background:linear-gradient(110deg,#487862,#2c7367);border-color:#a2d0aa}
+html[data-theme="dark"] .theme-picker{background:#1c2b35;border-color:#344b59}
+html[data-theme="dark"] .theme-picker svg{color:#ecd8b8}
+html[data-theme="dark"] .welcome-strip{background:linear-gradient(100deg,#294d46d9,#233c40eb);border:1px solid #4c7a6c;box-shadow:inset 0 1px #98c4ac22;padding:16px 22px;border-radius:14px;margin-bottom:18px}
+html[data-theme="dark"] .welcome-strip strong{font-size:12px;color:#d5eee2}
+html[data-theme="dark"] .welcome-strip p{color:#bfccd3;font-size:11px}
+html[data-theme="dark"] .welcome-strip>div>svg{width:29px;height:29px;color:#a0e0b8}
+html[data-theme="dark"] .welcome-strip .btn.secondary{background:linear-gradient(110deg,#20373e,#315e54);border-color:#648f91;color:#e2eeeb}
+html[data-theme="dark"] .overview{gap:17px;margin-bottom:21px;grid-template-columns:1.7fr repeat(3,minmax(0,1fr))}
+html[data-theme="dark"] .available{position:relative;isolation:isolate;border-radius:15px;padding:21px 21px 0;min-height:194px;overflow:hidden;background:radial-gradient(ellipse at 100% 0%,#8b9e657a,transparent 50%),linear-gradient(125deg,#2e5b4f,#24453f 70%);border:1px solid #7ca67f;box-shadow:inset 0 1px 1px #c4ddb57a,0 0 22px #558b5420}
+html[data-theme="dark"] .available::before{content:"";z-index:-1;position:absolute;inset:0;background:url('/assets/night-lake.png') right bottom/auto 240px;opacity:.18;mask-image:linear-gradient(90deg,transparent 35%,#000);pointer-events:none}
+html[data-theme="dark"] .available>.row{gap:12px;flex-direction:row-reverse;justify-content:flex-end}
+html[data-theme="dark"] .available>.row>svg{width:36px;height:36px;padding:7px;background:#75a47b29;border:1px solid #86b18c80;border-radius:10px;color:#b9efc6}
+html[data-theme="dark"] .available>.row>span{color:#e2eee7;font-size:12px;max-width:220px}
+html[data-theme="dark"] .hero-number{font-size:40px;line-height:1.2;margin:9px 0 8px;color:#f0f5f1;font-weight:600;letter-spacing:-1px}
+html[data-theme="dark"] .available p{font-size:10px;color:#c7d9d8;min-height:28px;max-width:100%}
+html[data-theme="dark"] .available-footer{background:#8ba9771a;border-color:#9dbd8d3d;margin:12px -21px 0;padding:10px 21px;color:#dbece3;gap:9px}
+html[data-theme="dark"] .available-footer svg{width:20px;height:20px;padding:3px;border-radius:50%;background:#89b67a66;color:#e1f3d3}
+html[data-theme="dark"] .metric{min-height:194px;border-radius:15px;padding:19px 18px;background:linear-gradient(135deg,#20333dee,#1d2b35);border-color:#385368;box-shadow:inset 0 1px #a9c9d30d}
+html[data-theme="dark"] .metric::after{content:"";position:absolute;z-index:-1;width:220px;height:150px;right:-80px;bottom:-80px;transform:rotate(-28deg);border-radius:50%;border:1px solid #6d9eae30;background:linear-gradient(#5c91a312,transparent);pointer-events:none}
+html[data-theme="dark"] .metric-savings{background:linear-gradient(135deg,#2b2e3eee,#212a36);border-color:#4b4b66}
+html[data-theme="dark"] .metric-savings::after{background:linear-gradient(#ba8fd212,transparent);border-color:#aa8cba24}
+html[data-theme="dark"] .metric-icon{margin-bottom:14px;border-color:#8fc9ad33;box-shadow:inset 0 1px #c0e1b52e}
+html[data-theme="dark"] .metric-icon.teal{background:linear-gradient(130deg,#4b7d62,#315b53);color:#b2eccb}
+html[data-theme="dark"] .metric-icon.blue{background:linear-gradient(130deg,#426e96,#294c70);border-color:#78abda4d;color:#c3e4ff}
+html[data-theme="dark"] .metric-icon.purple{background:linear-gradient(130deg,#775c8d,#4d3f64);border-color:#aa8cba4d;color:#f0cefa}
+html[data-theme="dark"] .metric>span:not(.metric-icon){color:#d8e2e9;font-size:12px}
+html[data-theme="dark"] .metric>strong{font-size:28px;color:#f0f4f8;margin:6px 0 8px;font-weight:550}
+html[data-theme="dark"] .metric-savings>strong{color:#f1dff6}
+html[data-theme="dark"] .metric>small{color:#b3c2cf;font-size:11px}
+html[data-theme="dark"] .metric-link{color:#c9d9e3;border-color:#3c586b;background:#23354180;width:29px;height:29px}
+html[data-theme="dark"] .metric-link:hover{background:#355f56;border-color:#80ad99}
+html[data-theme="dark"] .budget-section{background:radial-gradient(ellipse at 105% 10%,#82613933,transparent 42%),linear-gradient(120deg,#172c32,#1b2933 65%,#302d2f);border-color:#4d635b;box-shadow:inset 0 1px #a6c5b51a}
+html[data-theme="dark"] .section-symbol{color:#b0e6b9;filter:drop-shadow(0 0 7px #a8dfa02e)}
+html[data-theme="dark"] .budget-section .section-heading h2{color:#e6edf2}
+html[data-theme="dark"] .budget-section .section-heading p{color:#bdc9d5}
+html[data-theme="dark"] .envelopes .envelope{background:linear-gradient(120deg,#223b3c80,#1c2c34c9);border:1px solid #35565b;border-radius:14px;box-shadow:inset 0 1px #badac00d}
+html[data-theme="dark"] .envelopes .envelope.blue{background:linear-gradient(120deg,#243746b3,#253342a3);border-color:#3c5067}
+html[data-theme="dark"] .envelopes .envelope.purple{background:linear-gradient(120deg,#363044aa,#4b41405c);border-color:#665563}
+html[data-theme="dark"] .teal{--accent:#9fdeb7;--soft:#34594f}
+html[data-theme="dark"] .blue{--accent:#9bc8ee;--soft:#2d5273}
+html[data-theme="dark"] .purple{--accent:#dfb7e8;--soft:#5c456b}
+html[data-theme="dark"] .envelope .iconbox{border:1px solid #a1c9bd26;box-shadow:inset 0 1px #c7e9d222}
+html[data-theme="dark"] .envelope-title h3{color:#e4edf2;font-size:12px}
+html[data-theme="dark"] .envelope-title p{color:#b6c5d1;font-size:10px}
+html[data-theme="dark"] .ring-track{stroke:#56657480}
+html[data-theme="dark"] .allocation-ring>span{color:#e4efef}
+html[data-theme="dark"] .ring-value{filter:drop-shadow(0 0 3px #abc8bb16)}
+html[data-theme="dark"] .envelope .progress{background:#48576288}
+html[data-theme="dark"] .envelope .progress>span{background:linear-gradient(90deg,var(--accent),var(--accent));box-shadow:0 0 7px #c6dfca22}
+html[data-theme="dark"] .budget-ledger .budget-amount{color:#e2edf2}
+html[data-theme="dark"] .budget-ledger .budget-amount>span,html[data-theme="dark"] .budget-ledger .budget-bottom{color:#bdcbd7}
+html[data-theme="dark"] .budget-key{color:#b1bec8;font-size:10px}
+html[data-theme="dark"] .home-view .content-columns{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:16px}
+html[data-theme="dark"] .panel,html[data-theme="dark"] .goal-card{border-radius:15px;background:linear-gradient(135deg,#203039cc,#1c2933f2);border-color:#354d5c;box-shadow:inset 0 1px #9dbab10d}
+html[data-theme="dark"] .panel-heading{padding:15px 18px 8px}
+html[data-theme="dark"] .panel-heading h2{font-size:12px;gap:10px}
+html[data-theme="dark"] .panel-heading h2 svg{background:#31434d80;color:#bfceda;border:1px solid #6d859422}
+html[data-theme="dark"] .home-view .content-columns .empty,html[data-theme="dark"] .home-view .quiet-empty{position:relative;isolation:isolate;background:transparent;overflow:hidden}
+html[data-theme="dark"] .home-view .content-columns .empty::before,html[data-theme="dark"] .home-view .quiet-empty::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.12;background:linear-gradient(90deg,#182830cc,#18283088),url('/assets/night-lake.png') right 85%/cover;mask-image:linear-gradient(0deg,#000,transparent 85%);pointer-events:none}
+html[data-theme="dark"] .home-view .empty>svg,html[data-theme="dark"] .home-view .quiet-empty>svg{width:34px;height:34px;padding:7px;border-radius:50%;background:#63738226;color:#c7d5df;margin-bottom:8px}
+html[data-theme="dark"] .home-view .empty .btn.secondary,html[data-theme="dark"] .home-view .quiet-empty .btn.secondary{background:linear-gradient(120deg,#2e433d,#51433688);border-color:#958164;color:#e3e9e4;min-height:34px;padding:6px 14px}
+html[data-theme="dark"] .home-view .quiet-empty .btn.secondary{background:linear-gradient(120deg,#243a50,#345473);border-color:#7c99b8;color:#e0ebf8}
+html[data-theme="dark"] .home-view .section-heading{margin-top:22px}
+html[data-theme="dark"] .home-view .budget-section .section-heading{margin:0 5px 15px}
+
+@media(min-width:1500px){
+  html[data-theme="dark"] .main-content{padding:16px 24px 24px}
+  html[data-theme="dark"] .available{min-height:204px}
+  html[data-theme="dark"] .hero-number{font-size:44px}
+  html[data-theme="dark"] .metric>strong{font-size:30px}
+}
+@media(min-width:851px) and (max-width:1250px){
+  html[data-theme="dark"] .sidebar{width:205px;inset:12px auto 12px 12px;padding-left:11px;padding-right:11px}
+  html[data-theme="dark"] main{margin-left:229px;width:calc(100% - 229px)}
+  html[data-theme="dark"] .main-content{padding:16px}
+  html[data-theme="dark"] .brand{font-size:22px}
+  html[data-theme="dark"] .landscape-heading{min-height:210px;align-items:flex-start;flex-direction:column;padding:24px}
+  html[data-theme="dark"] .landscape-heading .heading-controls{align-self:flex-end;flex-direction:row}
+  html[data-theme="dark"] .overview{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  html[data-theme="dark"] .available{grid-column:1/-1;min-height:172px}
+  html[data-theme="dark"] .available p{min-height:0}
+  html[data-theme="dark"] .metric{min-height:184px}
+  .envelope-top>.iconbox{display:none!important}
+  .envelopes .envelope{padding:14px}
+  .allocation-ring,.allocation-ring svg{width:52px;height:52px}
+  html[data-theme="dark"] .home-view .content-columns{grid-template-columns:1fr}
+}
+@media(max-width:850px){
+  html[data-theme="dark"] .sidebar{position:sticky;inset:0 0 auto;width:100%;border-radius:0;border-width:0 0 1px;padding:13px 16px 0;backdrop-filter:blur(18px);background:#1b2b33f5}
+  html[data-theme="dark"] .sidebar .brand{font-size:22px}
+  html[data-theme="dark"] .sidebar .workspace,html[data-theme="dark"] .sidebar-tip,html[data-theme="dark"] .private-note{display:none}
+  html[data-theme="dark"] .sidebar .nav-item{margin:3px 0;padding:9px 11px;font-size:11px}
+  html[data-theme="dark"] .sidebar-bottom .nav-item{font-size:0}
+  html[data-theme="dark"] main{margin-left:0;width:100%}
+  html[data-theme="dark"] .topbar{height:58px;padding:0 18px}
+  html[data-theme="dark"] .main-content{padding:17px}
+  .landscape-heading{padding:22px;min-height:210px;flex-direction:column;align-items:flex-start}
+  .landscape-heading .heading-controls{flex-direction:row;align-self:stretch;justify-content:space-between}
+  html[data-theme="dark"] .landscape-heading{min-height:220px}
+  html[data-theme="dark"] .landscape-heading::before{background:linear-gradient(90deg,#101e26e6,#101e2666),linear-gradient(0deg,#101e26b3,transparent),url('/assets/night-lake.png') 68% center/cover}
+  html[data-theme="dark"] .overview{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+  html[data-theme="dark"] .available{grid-column:1/-1;min-height:180px}
+  html[data-theme="dark"] .metric{min-height:182px;padding:17px 15px}
+  html[data-theme="dark"] .metric>strong{font-size:24px}
+  html[data-theme="dark"] .metric>small{font-size:10px}
+  .envelopes .envelope-top{gap:8px}
+  .envelopes .envelope-top>.iconbox{display:none}
+  .allocation-ring,.allocation-ring svg{width:48px;height:48px}
+  .envelopes .envelope{padding:14px}
+  .envelope-title .percent{font-size:23px}
+  html[data-theme="dark"] .home-view .content-columns{grid-template-columns:1fr}
+}
+@media(max-width:590px){
+  html[data-theme="dark"] .main-content{padding:14px 12px 24px}
+  html[data-theme="dark"] .topbar{height:auto;min-height:58px;padding:8px 14px}
+  .landscape-heading{padding:24px 18px;gap:22px;border-radius:14px}
+  html[data-theme="dark"] .landscape-heading{min-height:232px}
+  html[data-theme="dark"] .page-heading.landscape-heading h1,.page-heading.landscape-heading h1{font-size:32px;line-height:1.2}
+  html[data-theme="dark"] .landscape-heading p:not(.greeting){font-size:12px;max-width:270px;line-height:1.6}
+  .landscape-heading .heading-controls{gap:8px;flex-wrap:wrap}
+  .landscape-heading .heading-controls>.btn{flex:1;font-size:11px;padding:10px 12px}
+  .landscape-heading .month-picker{padding:8px;min-width:136px}
+  .landscape-heading .month-picker input{width:114px;font-size:11px}
+  html[data-theme="dark"] .welcome-strip{padding:16px;border-radius:12px;gap:14px}
+  html[data-theme="dark"] .welcome-strip>div>svg{display:block;flex-shrink:0;width:25px;height:25px;align-self:flex-start}
+  html[data-theme="dark"] .welcome-strip strong{font-size:12px}
+  html[data-theme="dark"] .overview{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  html[data-theme="dark"] .available{grid-column:1/-1;padding:18px 18px 0;min-height:195px}
+  html[data-theme="dark"] .available-footer{margin-left:-18px;margin-right:-18px;padding:10px 18px}
+  html[data-theme="dark"] .hero-number{font-size:38px}
+  html[data-theme="dark"] .available p{font-size:11px;line-height:1.6;min-height:30px}
+  html[data-theme="dark"] .metric{min-height:177px;padding:16px 14px}
+  html[data-theme="dark"] .metric>strong{font-size:23px;overflow-wrap:anywhere}
+  html[data-theme="dark"] .metric>span:not(.metric-icon){font-size:11px}
+  html[data-theme="dark"] .metric>small{font-size:10px}
+  html[data-theme="dark"] .metric-savings{grid-column:1/-1;min-height:130px;padding-left:72px;justify-content:center}
+  html[data-theme="dark"] .metric-savings>.metric-icon{position:absolute;left:18px;top:22px}
+  .metric-link{right:11px;top:16px}
+  .budget-section{padding:14px 12px;border-radius:14px}
+  .budget-section .section-heading{gap:9px;flex-wrap:wrap;align-items:flex-start;margin:0 3px 17px}
+  .budget-section .section-heading>div{flex-basis:calc(100% - 45px)}
+  .budget-section .section-heading h2{font-size:15px;line-height:1.45}
+  .budget-section .section-heading .text-button{margin-left:38px;font-size:11px;min-height:30px}
+  .section-symbol svg{width:27px;height:27px}
+  .envelopes .envelope{padding:17px 16px;display:block}
+  .envelopes .envelope-top{display:flex;flex-direction:row;gap:13px;align-items:flex-start;margin-bottom:17px}
+  .envelopes .envelope-top>.iconbox{display:grid;width:37px;height:37px}
+  .allocation-ring,.allocation-ring svg{width:61px;height:61px}
+  .envelope-title .percent{font-size:24px}
+  html[data-theme="dark"] .envelope-title h3{font-size:12px}
+  .envelope-title p{font-size:11px}
+  .budget-ledger .budget-amount{font-size:16px}
+  .budget-key{text-align:left;font-size:10px;line-height:1.7}
+  .panel-heading h2{font-size:13px}
+  html[data-theme="dark"] .home-view .section-heading{margin-top:18px}
+}
+@media(prefers-reduced-motion:no-preference){
+  .metric-link{transition:background-color .15s,border-color .15s}
+}
