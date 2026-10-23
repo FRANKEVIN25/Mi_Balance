@@ -1,0 +1,10 @@
+import {createServer} from 'node:http';
+import {DatabaseSync} from 'node:sqlite';
+import {readFileSync,mkdirSync} from 'node:fs';
+import worker from './dist/server/index.js';
+mkdirSync('.sites-runtime',{recursive:true});
+const sqlite=new DatabaseSync('.sites-runtime/preview.sqlite');
+if(!sqlite.prepare("SELECT name FROM sqlite_master WHERE name = 'finances'").get())sqlite.exec(readFileSync('drizzle/0000_finances.sql','utf8'));
+const DB={prepare(sql){return {bind(...args){return {async first(){return sqlite.prepare(sql).get(...args)||null;}};}};}};
+const server=createServer(async(req,res)=>{try{const chunks=[];for await(const chunk of req)chunks.push(chunk);const headers=new Headers(req.headers);headers.set('oai-authenticated-user-id','local-preview');const r=new Request('http://127.0.0.1:4173'+req.url,{method:req.method,headers,...(!['GET','HEAD'].includes(req.method)?{body:Buffer.concat(chunks)}:{})});const result=await worker.fetch(r,{DB});res.writeHead(result.status,Object.fromEntries(result.headers));res.end(Buffer.from(await result.arrayBuffer()));}catch(e){res.writeHead(500);res.end('Preview error: '+e.message);}});
+server.listen(4173,'127.0.0.1',()=>console.log('Local: http://127.0.0.1:4173/ (datos de prueba separados de producción)'));
